@@ -23,7 +23,8 @@ else{
 			<tr>
 				<td width="200" align="right">Kode Angkot</td>
 				<td align="center" width="7">:</td>
-				<td><input type="text" name="kode_angkot" style="width:20%" value="<?php echo $data['kode_angkot']; ?>"  /></td>
+				<td><input type="text" name="kode_angkot" style="width:20%" 
+				value="<?php echo $data['kode_angkot']; ?>"  /></td>
 			</tr>
 			<tr>
 				<td width="200" align="right">Tujuan</td>
