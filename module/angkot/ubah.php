@@ -4,12 +4,8 @@ if(empty($_SESSION['session_tiket_user']) && empty($_SESSION['session_tiket_pass
 	echo "Anda Harus Login. Login <a href=\"index.php\">Di Sini</a>";
 }
 else{
-	if(access!="yes"){ 
-		echo "Denied."; 
-	} 
-	else {
+	if(access!="yes"){ echo "Denied."; } else {
 ?>
-
 <div class="theme-content-title">Ubah - Manajemen Angkutan Umum</div>
 <div class="theme-content-area">
 	<?php
@@ -39,8 +35,4 @@ else{
 		</table>
 	</form>
 </div>
-
-<?php
-	}
-}
-?>
+<?php } }?>
