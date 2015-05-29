@@ -1,4 +1,4 @@
-# Aplikasi Manajemen Tiket MetroMini Sederhana
+# Aplikasi Manajemen Tiket MetroMini Sederhana dengan PHP & MySQL
 Aplikasi ini dibuat sebagai syarat pengumpulan tugas UTS mata kuliah Pemrograman Web semester 6 jenjang Strata Satu (S1) STMIK Eresha Jakarta.
 
 ## Fitur-Fitur
