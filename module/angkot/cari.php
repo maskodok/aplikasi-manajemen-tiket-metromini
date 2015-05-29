@@ -35,22 +35,25 @@ else{
 			$batas   = 10;
 			$posisi  = $p->cariPosisi($batas);
 			$no      = 1;
-			$query = mysql_query("SELECT * FROM tiket_angkot WHERE kode_angkot LIKE '%$cari%' OR tujuan LIKE '%$cari%' ORDER BY kode_angkot DESC LIMIT $posisi,$batas");
+			$query = mysql_query("SELECT * FROM tiket_angkot WHERE 
+			kode_angkot LIKE '%$cari%' OR tujuan LIKE '%$cari%' ORDER BY kode_angkot DESC LIMIT $posisi,$batas");
 			while($data=mysql_fetch_array($query)){
 		?>
 		<tr>
-			<td align="center"><?php echo $data['kode_angkot']; ?></td>
-			<td><?php echo $data['tujuan']; ?></td>
-			<td align="center">
-				<a href="admin.php?page=angkot&action=ubah&id=<?php echo $data['id_angkot']; ?>">Ubah</a> | 
-				<a href="admin.php?page=angkot&action=hapus&id=<?php echo $data['id_angkot']; ?>" onClick="return warning();">Hapus</a>
-			</td>
+		<td align="center"><?php echo $data['kode_angkot']; ?></td>
+		<td><?php echo $data['tujuan']; ?></td>
+		<td align="center">
+		<a href="admin.php?page=angkot&action=ubah&id=<?php echo $data['id_angkot']; ?>">Ubah</a> | 
+		<a href="admin.php?page=angkot&action=hapus&id=<?php echo $data['id_angkot']; ?>" 
+		onClick="return warning();">Hapus</a>
+		</td>
 		</tr>
 		<?php } ?>
 	</table>
 	<?php
 		/* Buat Tombol Pagging */
-		$jmldata     = mysql_num_rows(mysql_query("SELECT * FROM tiket_angkot WHERE kode_angkot LIKE '%$cari%' OR tujuan LIKE '%$cari%'"));
+		$jmldata     = mysql_num_rows(mysql_query("SELECT * FROM tiket_angkot WHERE 
+		kode_angkot LIKE '%$cari%' OR tujuan LIKE '%$cari%'"));
 		$jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
 		$linkHalaman = $p->navHalaman($_GET["hal"], $jmlhalaman);
 		echo "<div id=\"result-pagging\">$linkHalaman</div>";
