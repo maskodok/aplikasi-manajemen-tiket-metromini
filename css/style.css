@@ -1,0 +1,265 @@
+body {
+	background: url('../img/bg.png');
+	font-family: arial;
+	font-size: 14px;
+	margin:0;
+	padding:0;
+}
+
+.grid_12 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.xleft { float: left; }
+.xright { float: right; }
+.clearfix { float: none; clear: both; }
+
+from, table {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+table {
+	width: 100%;
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+	border: 1px solid #d3d3d3;
+	width: 90%;
+	padding: 7px;
+	margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  border: 0;
+  background: #F55069;
+  color: #fff;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #555;
+}
+
+a {
+	color: #EC2727;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+/* LOGIN */
+#theme-login-wrapper {
+	margin: 50px 0px;
+}
+
+.theme-login-body {
+	width: 550px;
+	margin: 0 auto;
+}
+
+.theme-login-title {
+	background: #2F6CBD;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 17px;
+	font-size: 15px;
+}
+
+.theme-login-form {
+	background: #fff;
+	border: 1px solid #ededed;
+	border-top: 0px;
+	border-bottom: 2px solid #eaeaea;
+	padding: 28px 33px;
+	color: #333;
+}
+
+/* CONTENT */
+#theme-content-wrapper {
+	margin: 30px 0px 55px;  
+}
+
+.theme-content-body {
+	display: table;
+	width: 100%;
+	border:1px solid #eaeaea;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.03);
+}
+
+.theme-content-body .left,
+.theme-content-body .right {
+	display: table-cell;
+	vertical-align:top;
+}
+
+.theme-content-body .left {
+	background: #5C6CBE;
+	color: #fff;
+	width: 21%;
+}
+
+.theme-content-body .right {
+	background: #fff;
+	color: #333;
+	width: 79%;
+}
+
+.theme-content-area {
+  padding: 25px 28px 31px;
+}
+
+.menu-title {
+  background: #3C3C3C;
+  padding: 17px 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-list {
+  padding: 22px 28px 27px;
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list ul li {
+  border-bottom: 1px dotted #8B96CF;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.menu-list ul li a{
+	color: #fff;
+	font-weight: normal;
+	display:block;
+}
+
+.menu-list ul li a:hover {
+	color: #A5B4FF;
+}
+
+.menu-list ul li:last-child {
+	border-bottom:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+.theme-content-title {
+  background: #BE4F4F;
+  color: #fff;
+  padding: 17px 28px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.xright a {
+	  background: #48AB7E;
+	  color: #fff;
+	  padding: 8px 12px;
+	  display: inline-block;
+}
+
+.xright a:hover {
+	  background: #627B6F;
+	  color: #fff;
+}
+
+/* TABLE */
+.theme-content-menu {
+  margin-bottom: 15px;
+}
+
+.theme-content-area table {
+	border: 1px solid #d3d3d3;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+.theme-content-area table tr th {
+  background: #525C8E;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #959AB5;
+  border-left: 0;
+  border-top: 0;
+}
+
+.theme-content-area table.index tr:nth-of-type(odd) {
+  background: #fcfcfc;
+}
+.theme-content-area table.index2 tr:nth-of-type(even) {
+  background: #fcfcfc;
+}
+
+.theme-content-area table tr td {
+	border: 1px solid #d3d3d3;
+	border-left: 0;
+	border-top: 0;
+	padding: 10px 15px;
+}
+
+.theme-content-area table tr td a {
+	color: #616161;
+}
+
+.theme-content-area table tr td a:hover {
+	color: #ccc;
+}
+
+.theme-content-area table tr.saveit td {
+	background: #FAFAFA;
+}
+
+.theme-content-area select,
+.theme-content-area input[type="text"]{
+	margin-bottom: 0px;
+}
+
+.theme-content-area input[type="radio"] {
+	margin-right: 5px;
+}
+
+/* PAGING */
+#result-pagging {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+a {
+	transition: all ease .3s;
+}
+
+#result-pagging a {
+  color: #FFFFFF;
+  padding: 5px 11px;
+  background: #5D90B5;
+  display: inline-block;
+  margin: 0px 1px;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+#result-pagging a:hover{
+  background: #333;
+  color: #fff;
+}
